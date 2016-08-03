@@ -1,0 +1,70 @@
+{
+    "nodes": [
+        {
+            "entity": "patient"
+        },
+        {
+            "entity": "IC"
+        },
+        {
+            "entity": "study"
+        },
+        {
+            "entity": "collection"
+        },
+        {
+            "entity": "hospital"
+        },
+        {
+            "entity": "sample"
+        },
+        {
+            "entity": "container"
+        },
+        {
+            "entity": "subcollection"
+        }
+    ],
+    "links": [
+        {
+            "source": "hospital",
+            "target": "IC",
+            "label": "belongs"
+        },
+        {
+            "source": "study",
+            "target": "IC",
+            "label": "belongs"
+        },
+        {
+            "source": "IC",
+            "target": "patient",
+            "label": "signed"
+        },
+        {
+            "source": "IC",
+            "target": "collection",
+            "label": "partecipates"
+        },
+        {
+            "source": "patient",
+            "target": "collection",
+            "label": "generates"
+        },
+        {
+            "source": "collection",
+            "target": "subcollection",
+            "label": "generates"
+        },
+        {
+            "source": "subcollection",
+            "target": "sample",
+            "label": "generates"
+        },
+        {
+            "source": "container",
+            "target": "sample",
+            "label": "contains"
+        }
+    ]
+}

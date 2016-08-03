@@ -1,0 +1,535 @@
+{
+    "title": "Basket collection",
+    "type": "object",
+    "properties": {
+        "patient": {
+            "type": "array",
+            "items": {
+                "title": "Patient entity",
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "recordProcedure": {
+                        "type": "object",
+                        "properties": {
+                            "patientCode": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    },
+                    "relationships": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "linkType": {
+                                    "type": "string"
+                                },
+                                "linkDirection": {
+                                    "type": "string"
+                                },
+                                "deleted": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "model",
+                                "linkType",
+                                "linkDirection",
+                                "deleted",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "identifier",
+                    "model",
+                    "relationships",
+                    "recordProcedure"
+                ],
+                "additionalProperties": true
+            }
+        },
+        "hospital": {
+            "type": "array",
+            "items": {
+                "title": "Hospital entity",
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "recordProcedure": {
+                        "type": "object"
+                    },
+                    "relationships": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "linkType": {
+                                    "type": "string"
+                                },
+                                "linkDirection": {
+                                    "type": "string"
+                                },
+                                "deleted": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "model",
+                                "linkType",
+                                "linkDirection",
+                                "deleted",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "identifier",
+                    "model",
+                    "relationships",
+                    "recordProcedure"
+                ],
+                "additionalProperties": true
+            }
+        },
+        "study": {
+            "type": "array",
+            "items": {
+                "title": "Study entity",
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "recordProcedure": {
+                        "type": "object"
+                    },
+                    "relationships": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "linkType": {
+                                    "type": "string"
+                                },
+                                "linkDirection": {
+                                    "type": "string"
+                                },
+                                "deleted": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "model",
+                                "linkType",
+                                "linkDirection",
+                                "deleted",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "identifier",
+                    "model",
+                    "relationships",
+                    "recordProcedure"
+                ],
+                "additionalProperties": true
+            }
+        },
+        "IC": {
+            "type": "array",
+            "items": {
+                "title": "IC entity",
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "recordProcedure": {
+                        "type": "object"
+                    },
+                    "relationships": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "linkType": {
+                                    "type": "string"
+                                },
+                                "linkDirection": {
+                                    "type": "string"
+                                },
+                                "deleted": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "model",
+                                "linkType",
+                                "linkDirection",
+                                "deleted",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "identifier",
+                    "model",
+                    "relationships",
+                    "recordProcedure"
+                ],
+                "additionalProperties": true
+            }
+        },
+        "collection": {
+            "type": "array",
+            "items": {
+                "title": "Collection entity",
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "recordProcedure": {
+                        "type": "object",
+                        "properties": {
+                            "tumorType": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "tumorType"
+                        ]
+                    },
+                    "relationships": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "linkType": {
+                                    "type": "string"
+                                },
+                                "linkDirection": {
+                                    "type": "string"
+                                },
+                                "deleted": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "model",
+                                "linkType",
+                                "linkDirection",
+                                "deleted",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "identifier",
+                    "model",
+                    "relationships",
+                    "recordProcedure"
+                ],
+                "additionalProperties": true
+            }
+        },
+        "subcollection": {
+            "type": "array",
+            "items": {
+                "title": "Subcollection entity",
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "recordProcedure": {
+                        "type": "object",
+                        "properties": {
+                            "anatomicSite": {
+                                "type": "string"
+                            },
+                            "hystoEval": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "anatomicSite",
+                            "hystoEval"
+                        ]
+                    },
+                    "relationships": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "linkType": {
+                                    "type": "string"
+                                },
+                                "linkDirection": {
+                                    "type": "string"
+                                },
+                                "deleted": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "model",
+                                "linkType",
+                                "linkDirection",
+                                "deleted",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "identifier",
+                    "model",
+                    "relationships",
+                    "recordProcedure"
+                ],
+                "additionalProperties": true
+            }
+        },
+        "sample": {
+            "type": "array",
+            "items": {
+                "title": "Sample entity",
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "recordProcedure": {
+                        "type": "object",
+                        "properties": {
+                            "volume": {
+                                "type": "number"
+                            },
+                            "numpieces": {
+                                "type": "number"
+                            },
+                            "concentration": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "relationships": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "linkType": {
+                                    "type": "string"
+                                },
+                                "linkDirection": {
+                                    "type": "string"
+                                },
+                                "deleted": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "model",
+                                "linkType",
+                                "linkDirection",
+                                "deleted",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "identifier",
+                    "model",
+                    "relationships",
+                    "recordProcedure"
+                ],
+                "additionalProperties": true
+            }
+        },
+        "container": {
+            "type": "array",
+            "items": {
+                "title": "Container entity",
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "model": {
+                        "type": "string"
+                    },
+                    "recordProcedure": {
+                        "type": "object"
+                    },
+                    "relationships": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string"
+                                },
+                                "model": {
+                                    "type": "string"
+                                },
+                                "linkType": {
+                                    "type": "string"
+                                },
+                                "linkDirection": {
+                                    "type": "string"
+                                },
+                                "deleted": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "object",
+                                    "properties": {
+                                        "position": {
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "model",
+                                "linkType",
+                                "linkDirection",
+                                "deleted",
+                                "data"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "identifier",
+                    "model",
+                    "relationships",
+                    "recordProcedure"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    "required": [
+        "patient",
+        "hospital",
+        "study",
+        "IC",
+        "collection",
+        "subcollection",
+        "sample",
+        "container"
+    ]
+}

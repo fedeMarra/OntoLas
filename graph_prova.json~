@@ -1,0 +1,70 @@
+{
+    "nodes": [
+        {
+            "entity": "patient"
+        },
+        {
+            "entity": "IC"
+        },
+        {
+            "entity": "study"
+        },
+        {
+            "entity": "collection"
+        },
+        {
+            "entity": "hospital"
+        },
+        {
+            "entity": "sample"
+        },
+        {
+            "entity": "container"
+        },
+        {
+            "entity": "subcollection"
+        }
+    ],
+    "links": [
+        {
+            "source": "IC",
+            "target": "organism",
+            "label": "belongs"
+        },
+        {
+            "source": "IC",
+            "target": "study",
+            "label": "belongs"
+        },
+        {
+            "source": "IC",
+            "target": "organism",
+            "label": "signed"
+        },
+        {
+            "source": "IC",
+            "target": "collection",
+            "label": "partecipates"
+        },
+        {
+            "source": "patient",
+            "target": "collection",
+            "label": "generates"
+        },
+        {
+            "source": "sample",
+            "target": "measurement datum",
+            "label": "generates"
+        },
+        {
+            "source": "measurement datum",
+            "target": "measurement datum",
+            "label": "generates"
+        },
+        {
+            "source": "container",
+            "target": "sample",
+            "label": "contains"
+        }
+    ]
+}
